@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Жондомдуулукко тушунук</title>
+<!-- Подключение шрифта (например, "Orbitron" для футуристического стиля) -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  /* Общие стили */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  /* Заголовок с темой */
+  header {
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    animation: glitch 1s infinite;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fff;
+    opacity: 0.7;
+  }
+
+  /* Глитч эффект для заголовка */
+  @keyframes glitch {
+    0% {
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+    20% {
+      text-shadow: 2px 0 red, -2px 0 blue;
+    }
+    40% {
+      text-shadow: -2px 0 red, 2px 0 blue;
+    }
+    60% {
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+    80% {
+      text-shadow: 2px 0 red, -2px 0 blue;
+    }
+    100% {
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+  }
+
+  /* Контент блоков — каждый занимает всю высоту и ширину */
+  .block {
+    width: 100%;
+    min-height: 100vh; /* занимает всю видимую высоту */
+    background: rgba(0, 255, 255, 0.1);
+    border: 2px solid #0ff;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* по вертикали по центру */
+    align-items: center; /* по горизонтали по центру */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  /* Футуристический глитч эффект в каждом блоке */
+  .block::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #0ff, #f0f);
+    opacity: 0.2;
+    transform: rotate(25deg);
+    animation: glitchAnim 3s infinite alternate;
+  }
+
+  @keyframes glitchAnim {
+    0% {
+      transform: rotate(25deg) translate(-10px, -10px);
+    }
+    100% {
+      transform: rotate(25deg) translate(10px, 10px);
+    }
+  }
+
+  /* Надпись внизу каждого блока (если нужно) */
+  /* Можно оставить или убрать, по желанию */
+
+  /* Нижняя заметка */
+  .bottom-note {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px 20px;
+    color: #aaa;
+  }
+
+  /* Футер */
+  footer {
+    background-color: #111;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+  }
+
+  footer h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+
+  /* Стиль для футуристического текста в футере */
+  .footer-styled {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fff, 0 0 20px #0ff;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>жондомдуулукко тушунук</h1>
+  <h2>студенттердин оз алдынча иштери №14</h2>
+</header>
+
+<div class="content">
+  <div class="block"><h2></h2><p>Максаты:
+    Жөндөмдүүлүк түшүнүгүн түшүндүрүү 
+    Анын түрлөрүн жана маанисин көрсөтүү
+    Мисалдар менен бекемдөө</p></div>
+  <div class="block"><h2>Жөндөмдүүлүк деген эмне?</h2> <p>Жөндөмдүүлүк — бул адамдын белгилүү бир ишти ийгиликтүү аткаруу мүмкүнчүлүгү.Бул табигый же өнүккөн сапат болушу мүмкүн.Ал инсандык өзгөчөлүктөр менен тыгыз байланышта.</p></div>
+  <div class="block"><h2>Жөндөмдүүлүктүн түрлөрү</h2><p>1. Табигый жөндөмдүүлүк – төрөлгөндөн эле болот (мисалы: ырдоо, сүрөт тартуу).
+    2. Өнүккөн жөндөмдүүлүк – үйрөнүү жана машыгуу аркылуу пайда болот (мисалы: программалоо, машина айдоо).</p></div>
+  <div class="block"><h2>Жөндөмдүүлүктүн мисалдары</h2><p>Спортчу — физикалык жөндөмдүүлүккө ээ. 
+    Математик — логикалык жана аналитикалык жөндөмдүүлүк.
+     Артист — чыгармачылык жана актердук жөндөмдүүлүк</p></div>
+  <div class="block"><h2> Жөндөмдүүлүк кандайча өнүгөт?</h2><p>Тажрыйба жана машыгуу
+
+    Билим алуу
+    
+    Интерес жана аракет
+    
+    Туруктуу эмгек менен</p></div>
+  <div class="block"><h2>жыйынтык</h2><p>Ар бир адамда өзүнө тиешелүү жөндөмдүүлүк бар
+
+    Жөндөмдүүлүктү таанып, өнүктүрүү керек
+    
+    Жашоодо ийгиликке жетүүнүн ачкычы – жөндөмдү туура колдонуу</p></div>
+</div>
+
+<div class="bottom-note">
+  
+</div>
+
+<footer>
+  <h3>срс №14</h3>
+  <div class="footer-styled">студент-Сартова Сезим| преподаватель Карасартова Ж.</div>
+</footer>
+
+</body>
+</html>
